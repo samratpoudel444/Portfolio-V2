@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "avnadmin",
+    "password": 'null',
+    "database": "defaultdb",
+    "host": "pg-18856e63-process-1.d.aivencloud.com",
+    "port":22422,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 28921,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 28921,
+    "dialect": "postgres"
+  }
+}

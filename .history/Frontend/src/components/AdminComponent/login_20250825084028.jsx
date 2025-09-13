@@ -1,0 +1,7 @@
+
+const loginComponent=()=>
+{
+    return(
+        div
+    )
+}
