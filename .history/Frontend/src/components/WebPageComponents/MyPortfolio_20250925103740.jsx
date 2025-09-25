@@ -1,0 +1,12 @@
+const MyPortfolio= ()=>
+{
+    return(
+        <div className="mt-16 bg-gray-50">
+            <div>
+                <h1><a href=""></a></h1>
+            </div>
+        </div>
+    )
+}
+
+export default MyPortfolio;
