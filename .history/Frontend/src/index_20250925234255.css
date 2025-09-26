@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* 3️⃣ Optional: your custom components */
+@layer components {
+  .btn-custom {
+    @apply px-4 py-2 rounded-lg bg-yellow-500 text-white font-bold;
+  }
+}
+
+/* 4️⃣ Optional: your own utilities */
+@layer utilities {
+  .skew-10 {
+    transform: skewY(-10deg);
+  }
+}
