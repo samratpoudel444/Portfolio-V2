@@ -1,0 +1,34 @@
+
+
+import { useState, useEffect } from "react";
+import GitHubCalendar from "react-github-calendar";
+
+function MyContribution() {
+  const [fontSize, setFontSize] = useState(16);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1200) setFontSize(16);
+      else if (window.innerWidth > 768) setFontSize(18);
+      else setFontSize(12);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // set initially
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <div></div>
+    <GitHubCalendar
+      username="samratpoudel444"
+      blockSize={18}
+      blockMargin={6}
+      fontSize={fontSize}
+      color="#16a34a"
+    />
+  );
+}
+
+
+export default MyContribution;

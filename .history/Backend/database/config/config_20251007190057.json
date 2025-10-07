@@ -1,0 +1,45 @@
+{
+  "development": {
+    "username": "avnadmin",
+    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
+    "database": "defaultdb",
+    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
+    "port": 14654,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      },
+      "family": 4
+    }
+  },
+  "test": {
+    "username": "avnadmin",
+    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
+    "database": "defaultdb",
+    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
+    "port": 14654,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "production": {
+    "username": "avnadmin",
+    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
+    "database": "defaultdb",
+    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
+    "port": 14654,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
