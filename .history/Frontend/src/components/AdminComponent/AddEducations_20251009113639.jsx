@@ -1,0 +1,20 @@
+const AddEducation= ()=>
+{
+    return (
+      <div className="">
+        <div className="h-16 w-full bg-gray-300 text-3xl flex justify-center items-center shadow-lg">
+          <h1>Add Education</h1>
+        </div>
+        <div>
+          <form>
+            <div>
+              <label>Education year</label>
+              <input type="text" name="EducationYear" id="EducationYear" className="bo"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    );
+}
+
+export default AddEducation;
