@@ -1,0 +1,24 @@
+import { dividerClasses } from "@mui/material";
+
+const Education = [
+  {
+    EducationInstitute: "hello",
+    "Education year": "2020-2020",
+    "Education Faculty": "school",
+  },
+  {
+    EducationInstitute: "hello",
+    "Education year": "2020-2020",
+    "Education Faculty": "school",
+  },
+  {
+    EducationInstitute: "hello",
+    "Education year": "2020-2020",
+    "Education Faculty": "school",
+  },
+];
+
+const viewEducation= ()=>
+{
+    return(dividerClasses)
+}

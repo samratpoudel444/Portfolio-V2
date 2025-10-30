@@ -1,0 +1,18 @@
+const Dashboard =()=>
+{
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        <div className="h-16 w-full bg-gray-300 flex justify-center items-center shadow-md text-white text-3xl font-semibold">
+          <h1>Dashboard</h1>
+        </div>
+        <div className="sm:m-24 m-8 sm:flex sm:flex-row flex flex-col gap-8">
+          <div className="border sm:w-1/3 h-48 rounded-2xl w-full b"></div>
+          <div className="border sm:w-1/3 h-48 rounded-2xl"></div>
+          <div className="border sm:w-1/3 h-48 rounded-2xl"></div>
+        </div>
+      </div>
+    );
+}
+
+
+export default Dashboard;
