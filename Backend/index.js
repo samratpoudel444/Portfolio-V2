@@ -4,6 +4,7 @@ const authRouter = require("./routes/authRouter");
 const { errorHandler } = require("./middleware/errorMiddleware");
 const cors = require("cors");
 const blogRouter = require("./routes/blogRouter");
+const educationRouter = require("./routes/EducationRouter");
 
 
 const allowedOrigins = [
@@ -34,6 +35,7 @@ app.use(express.json());
 
 app.use("/api/v1", authRouter);
 app.use("/api/v1", blogRouter);
+app.use("/api/v1", educationRouter);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
