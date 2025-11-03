@@ -1,0 +1,7 @@
+const deleteEducation=()=>
+{
+    try{
+
+    }
+    catch
+}
