@@ -1,0 +1,14 @@
+
+
+const PopUpForm=({onClose})=>
+{
+    return(
+        <div className="">
+            <div className="">
+                    
+            </div>
+        </div>
+    )
+}
+
+export default PopUpForm;

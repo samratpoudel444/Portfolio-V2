@@ -1,0 +1,6 @@
+const PopUpForm=({onClose})=>
+{
+    return({
+        
+    })
+}

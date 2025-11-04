@@ -1,6 +1,0 @@
-const HomeSection= ()=>
-{
-    return(
-        di
-    )
-}
