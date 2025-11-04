@@ -1,6 +1,0 @@
-const MyPortfolioPage= ()=>
-{
-    return (
-        
-    )
-}
