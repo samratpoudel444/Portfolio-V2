@@ -1,0 +1,20 @@
+import ErrorIcon from "@mui/icons-material/Error";
+
+const EducationPopUp = () => {
+  return (
+    <div className="w-full h-full flex">
+      <div className="flex flex-col  justify-center items-center ">
+        <p>
+          <ErrorIcon />
+          Are You Sure you want to delete Record?
+        </p>
+        <div>
+          <button>Delete</button>
+          <button>Close</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default EducationPopUp;
