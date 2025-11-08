@@ -18,7 +18,7 @@ import ViewSkills from "./components/AdminComponent/viewSkills.jsx";
 import MyProfile from "./components/AdminComponent/MyProfile.jsx";
 import ProtectedRoute from "./utils/protectedRoute.jsx";
 import BlogsPage from "./components/WebPageComponents/BlogPage.jsx";
-import SingleBlogPage from "./components/WebPageComponents/singleBlogPage.jsx";
+import SingleBlogPage from "./components/WebPageComponents/singleBlogPage";
 
 
 function App() {

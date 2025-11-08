@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginComponent from "./components/AdminComponent/login.jsx";
+import LoginComponent from "./components/AdminComponent/login";
 import HomePage from "./components/WebPageComponents/HomePage.jsx";
-import MyPortfolioPage from "./components/WebPageComponents/PagePortfolio.jsx";
-import HomeComponent from "./components/AdminComponent/HomeComponet.jsx";
+import MyPortfolioPage from "./components/WebPageComponents/PagePortfolio";
+import HomeComponent from "./components/AdminComponent/HomeComponet";
 import AddSkills from "./components/AdminComponent/AddSkills.jsx";
 import "./index.css";
-import AddEducation from "./components/AdminComponent/AddEducations.jsx";
+import AddEducation from "./components/AdminComponent/AddEducations";
 import AddExperince from "./components/AdminComponent/AddExperinces.jsx";
 import CreateBlogs from "./components/AdminComponent/CreateBlogs.jsx";
 import AddProjects from "./components/AdminComponent/AddProjects.jsx";
 import Dashboard from "./components/AdminComponent/Dashboard.jsx";
 import ViewEducation from "./components/AdminComponent/viewEducation.jsx";
-import ViewProjects from "./components/AdminComponent/viewProject.jsx";
-import ViewExperince from "./components/AdminComponent/viewExperince.jsx";
-import ViewBlogs from "./components/AdminComponent/viewBlogs.jsx";
-import ViewSkills from "./components/AdminComponent/viewSkills.jsx";
-import MyProfile from "./components/AdminComponent/MyProfile.jsx";
-import ProtectedRoute from "./utils/protectedRoute.jsx";
-import BlogsPage from "./components/WebPageComponents/BlogPage.jsx";
-import SingleBlogPage from "./components/WebPageComponents/singleBlogPage.jsx";
+import ViewProjects from "./components/AdminComponent/viewProject";
+import ViewExperince from "./components/AdminComponent/viewExperince";
+import ViewBlogs from "./components/AdminComponent/viewBlogs";
+import ViewSkills from "./components/AdminComponent/viewSkills";
+import MyProfile from "./components/AdminComponent/MyProfile";
+import ProtectedRoute from "./utils/protectedRoute";
+import BlogsPage from "./components/WebPageComponents/BlogPage";
+import SingleBlogPage from "./components/WebPageComponents/singleBlogPage";
 
 
 function App() {
