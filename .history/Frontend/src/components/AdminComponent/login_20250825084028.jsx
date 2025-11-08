@@ -1,7 +1,0 @@
-
-const loginComponent=()=>
-{
-    return(
-        div
-    )
-}

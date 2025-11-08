@@ -1,6 +1,0 @@
-
-const data=
-const AboutMe= ()=>
-{
-    
-}
