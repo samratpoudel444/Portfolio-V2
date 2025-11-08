@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Portfolio-V2
+    name: portfolio-v2
     env: static
     buildCommand: cd Frontend && npm ci && npm run build
     staticPublishPath: Frontend/dist
