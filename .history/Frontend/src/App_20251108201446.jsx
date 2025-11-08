@@ -11,19 +11,21 @@ import CreateBlogs from "./components/AdminComponent/CreateBlogs.jsx";
 import AddProjects from "./components/AdminComponent/AddProjects.jsx";
 import Dashboard from "./components/AdminComponent/Dashboard.jsx";
 import ViewProjects from "./components/AdminComponent/ViewProject.jsx";
-import ViewExperince from "./components/AdminComponent/ViewExperince.jsx";
-import ViewBlogs from "./components/AdminComponent/ViewBlogs.jsx";
-import ViewSkills from "./components/AdminComponent/ViewSkills.jsx";
+import ViewExperince from "./components/AdminComponent/viewExperince.jsx";
+import ViewBlogs from "./components/AdminComponent/viewBlogs.jsx";
+import ViewSkills from "./components/AdminComponent/viewSkills.jsx";
 import MyProfile from "./components/AdminComponent/MyProfile.jsx";
 import ProtectedRoute from "./utils/protectedRoute.jsx";
 import BlogsPage from "./components/WebPageComponents/BlogPage.jsx";
 import SingleBlogPage from "./components/WebPageComponents/singleBlogPage.jsx";
-import ViewEducation from "./components/AdminComponent/ViewEducation.jsx";
+import ViewEducation from "./components/AdminComponent/viewEducation.jsx";
+
 
 function App() {
   return (
     <Router>
       <Routes>
+  
         <Route path="/login" element={<LoginComponent />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/myportfolio" element={<MyPortfolioPage />} />

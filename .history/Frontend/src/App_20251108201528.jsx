@@ -20,10 +20,12 @@ import BlogsPage from "./components/WebPageComponents/BlogPage.jsx";
 import SingleBlogPage from "./components/WebPageComponents/singleBlogPage.jsx";
 import ViewEducation from "./components/AdminComponent/ViewEducation.jsx";
 
+
 function App() {
   return (
     <Router>
       <Routes>
+  
         <Route path="/login" element={<LoginComponent />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/myportfolio" element={<MyPortfolioPage />} />
