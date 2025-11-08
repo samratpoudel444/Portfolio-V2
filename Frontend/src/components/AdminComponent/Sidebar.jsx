@@ -7,7 +7,7 @@ import AddTaskIcon from "@mui/icons-material/AddTask";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
-import samrat from "../../assets/samrat2.png";
+import samrat from "../../assets/Samrat2.png";
 
 const SideBar = () => {
   const [toogle, setToogle] = useState({});
