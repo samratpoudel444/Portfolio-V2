@@ -1,81 +1,14 @@
 
 import SchoolIcon from "@mui/icons-material/School";
-import Samrat from "../../assets/Samrat1.png";
-import { Link } from "react-router-dom";
 import MyContribution from "./GitHubContributions";
 import Footer from "./footer";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useEffect, useState } from "react";
+import axiosInstance from "../../utils/axiosInstance";
+import { toast } from "react-toastify";
 
-const EducationData = [
-  {
-    instituteName: "Sagarmatha College",
-    faculty: "Bachelor (Bsc.CSIT)",
-    year: "2022-2026",
-  },
-  {
-    instituteName: "D.A.V College",
-    faculty: "Intermediate School (Science)",
-    year: "2019-2021",
-  },
 
-  {
-    instituteName: "Cardinal Int'l Boarding High School",
-    faculty: "Basic School",
-    year: "2005-2018",
-  },
 
-];
-
-const WorkExperince = [
-  {
-    instituteName: "Swift Techonology private limited",
-    workName: "Backend Development",
-    year: "2024-2025",
-  },
-];
-
-const MyTask = [
-  {
-    id: 1,
-    title: "Design Landing Page",
-    description:
-      "Create a responsive landing page for the portfolio website using Tailwind CSS and React components.",
-    image: Samrat,
-    link: "",
-  },
-  {
-    id: 2,
-    title: "Set up Backend API",
-    description:
-      "Develop REST API endpoints for managing tasks and users using Node.js, Express, and PostgreSQL.",
-    image: Samrat,
-    link: "",
-  },
-  {
-    id: 3,
-    title: "Implement Authentication",
-    description:
-      "Add JWT-based login and registration system with role-based access control.",
-    image: Samrat,
-    link: "",
-  },
-  {
-    id: 4,
-    title: "Create Task Dashboard",
-    description:
-      "Build a React dashboard showing all tasks, filter by status and priority, and allow marking tasks as completed.",
-    image: Samrat,
-    link: "",
-  },
-  {
-    id: 5,
-    title: "Write Unit Tests",
-    description:
-      "Write unit tests for backend API endpoints using Jest and supertest to ensure proper task management functionality.",
-    image: Samrat,
-    link: "",
-  },
-];
 
 function TruncatedText({ text }) {
   return <p>{text.length > 80 ? text.substring(0, 80) + "..." : text}</p>;
@@ -83,12 +16,63 @@ function TruncatedText({ text }) {
 
 const MyPortfolioPage= ()=>
 {
+    const [education, setEducation]= useState([])
+    const [experince, setExperince] = useState([]);
+    const[project, setProject]= useState([]);
+
+    useEffect(()=>
+    {
+      const fetchEducationData= async()=>
+      {
+        try{
+          const res = await axiosInstance.get("/getEducationForClient");
+          setEducation(res.data.data);
+         
+        }
+        catch(err)
+        {
+          toast.error(err.response.data.message)
+        }
+      }
+
+      fetchEducationData()
+    },[])
+
+
+        useEffect(() => {
+          const fetchExperinceData = async () => {
+            try {
+              const res = await axiosInstance.get("/getExperinceForClient");
+              setExperince(res.data.data);
+            } catch (err) {
+              toast.error(err.response.data.message);
+            }
+          };
+
+          fetchExperinceData();
+        }, []);
+
+
+          useEffect(() => {
+            const fetchProjectData = async () => {
+              try {
+                const res = await axiosInstance.get("/getProjectForClient");
+                setProject(res.data.data);
+              } catch (err) {
+                toast.error(err.response.data.message);
+              }
+            };
+
+            fetchProjectData();
+          }, []);
+
+
+
     return (
       <div>
-        <div className="m-4 w-48 ">
-          <a href="/#home" className="flex hover:text-blue-600 border">
-            <ArrowBackIcon />{" "}
-            Back to home page
+        <div className="m-4 w-48 border rounded-2xl p-2 bg-green-900 text-white hover:shadow-2xl">
+          <a href="/#home" className="flex">
+            <ArrowBackIcon /> Back to home page
           </a>
         </div>
         <div className="">
@@ -112,14 +96,16 @@ const MyPortfolioPage= ()=>
                 </div>
                 Education
               </h1>
-              {EducationData.map((data, index) => (
+              {education.map((data, index) => (
                 <div
                   key={index}
                   className="flex flex-col sm:text-xl gap-2 border-l-2 p-4 border-gray-400"
                 >
-                  <a className="text-gray-400">{data.year}</a>
-                  <a className="font-bold sm:text-2xl">{data.instituteName}</a>
-                  <a className="text-gray-400">{data.faculty}</a>
+                  <a className="text-gray-400">{data.EducationYear}</a>
+                  <a className="font-bold sm:text-2xl">
+                    {data.EducationInstitute}
+                  </a>
+                  <a className="text-gray-400">{data.EducationFaculty}</a>
                 </div>
               ))}
             </div>
@@ -130,14 +116,14 @@ const MyPortfolioPage= ()=>
                 </div>
                 Work Experince
               </h1>
-              {WorkExperince.map((data, index) => (
+              {experince.map((data, index) => (
                 <div
                   key={index}
                   className="flex flex-col sm:text-xl gap-2 border-l-2 p-4 border-gray-400"
                 >
-                  <a className="text-gray-400">{data.year}</a>
-                  <a className="font-bold sm:text-2xl">{data.instituteName}</a>
-                  <a className="text-gray-400">{data.workName}</a>
+                  <a className="text-gray-400">{data.WorkedYear}</a>
+                  <a className="font-bold sm:text-2xl">{data.CompanyName}</a>
+                  <a className="text-gray-400">{data.Position}</a>
                 </div>
               ))}
             </div>
@@ -153,16 +139,22 @@ const MyPortfolioPage= ()=>
               </h2>
             </div>
             <div className="sm: grid sm:grid-cols-3 flex flex-col mt-16 sm:gap-8 gap-4 ">
-              {MyTask.map((items, count) => (
+              {project.map((items, count) => (
                 <div
                   key={count}
                   className="flex flex-col rounded-2xl bg-white justify-center items-center p-4 gap-4 shadow-sm hover:shadow-2xl"
                 >
-                  <img src={items.image} alt={items.title} className="h-2/3" />
-                  <a className="sm:text-2xl font-bold text-xl">{items.title}</a>
+                  <img
+                    src={items.ProjectImage}
+                    alt={items.title}
+                    className="h-2/3"
+                  />
+                  <a className="sm:text-2xl font-bold text-xl">
+                    {items.ProjectName}
+                  </a>
                   <p>{items.description}</p>
                   <button className="rounded-2xl w-2/3 p-2 bg-yellow-500 hover:bg-yellow-600">
-                    <a href="https://www.fb.com">View Project</a>
+                    <a href={items.ProjectLink}>View Project</a>
                   </button>
                 </div>
               ))}

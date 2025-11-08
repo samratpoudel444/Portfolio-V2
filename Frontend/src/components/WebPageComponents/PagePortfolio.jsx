@@ -1,7 +1,5 @@
 
 import SchoolIcon from "@mui/icons-material/School";
-import Samrat from "../../assets/Samrat1.png";
-import { Link } from "react-router-dom";
 import MyContribution from "./GitHubContributions";
 import Footer from "./footer";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
