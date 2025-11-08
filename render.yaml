@@ -3,7 +3,7 @@ services:
     name: portfolio-v2
     env: static
     buildCommand: cd Frontend && npm ci && npm run build
-    staticPublishPath: ./Frontend/dist
+    staticPublishPath: Frontend/dist
     routes:
       - type: rewrite
         source: /*
