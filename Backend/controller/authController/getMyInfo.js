@@ -1,6 +1,6 @@
 const sequelize = require("../../helper/sequelizeHelper");
 
-
+//coome
 const getMyInfo = async (req, res, next) => {
   const query = `SELECT "firstName","lastName","email","DOB" FROM "Users" WHERE email=:email`;
   try {

@@ -1,4 +1,0 @@
-const getMyInfo= (req, res, next)=>
-{
-    
-}
