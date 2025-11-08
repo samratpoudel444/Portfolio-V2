@@ -16,7 +16,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "https://myproductionfrontend.com",
-  "https://samratpoudel.com.np",
+  "https://www.samratpoudel.com.np",
 ];
 
 dotenv.config();
