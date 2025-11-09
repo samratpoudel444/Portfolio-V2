@@ -4,37 +4,6 @@ import { toast } from "react-toastify";
 import axiosInstance from "../../utils/axiosInstance";
 
 
-const Tools = [
-  {
-    name: "Java Script",
-    img: js,
-  },
-  {
-    name: "Express js",
-    img: js,
-  },
-
-  {
-    name: "Node js ",
-    img: js,
-  },
-
-  {
-    name: "React js",
-    img: js,
-  },
-
-  {
-    name: "Redis",
-    img: js,
-  },
-
-  {
-    name: "Rabbit MQ",
-    img: js,
-  },
-];
-
 const ToolsUsed = () => {
 
   const [skills, setSkills] = useState([]);
