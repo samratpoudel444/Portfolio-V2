@@ -63,7 +63,8 @@ const HomeSection = ({id}) => {
             <a
               href={data.CVLINK}
               download
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View CV{" "}
             </a>
@@ -75,7 +76,7 @@ const HomeSection = ({id}) => {
         <div className="rounded-full bg-yellow-500 sm:w-[420px] sm:h-[420px] w-[300px] h-[300px]"></div>
         <img
           src={Samrat}
-          alt="samrat poudel"
+          alt="samrat poudel, Backend Developer"
           className="absolute z-10 sm:w-[500px] sm:h-[500px] w-[250px] h-[250px] ml-8"
         />
         <button></button>

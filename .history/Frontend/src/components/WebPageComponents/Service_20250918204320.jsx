@@ -1,6 +1,0 @@
-const Service= ()=>
-{   
-    return(
-        di
-    )
-}

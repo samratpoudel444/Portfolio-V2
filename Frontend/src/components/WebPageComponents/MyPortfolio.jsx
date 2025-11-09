@@ -25,7 +25,6 @@ const MyPortfolio = () => {
   return (
     <div className="mt-16 bg-gray-100 sm:p-16 p-4" id="projects">
       <div className="flex flex-col">
-
         <h1 className="sm:text-3xl text-xl ">
           <span className="text-yellow-500">-</span> My Portfolio
         </h1>
@@ -34,7 +33,6 @@ const MyPortfolio = () => {
           <h2 className="sm:text-4xl text-2xl ">
             My Latest <span className="text-yellow-500">Projects</span>
           </h2>
-    
         </div>
 
         <div className="mt-8 sm:mt-16 grid sm:grid-cols-3 gap-8">
@@ -45,8 +43,8 @@ const MyPortfolio = () => {
             >
               <img
                 src={project.ProjectImage}
-                alt={project.ProjectName}
-                className="w-full h-48 object-cover rounded-t-2xl"
+                alt={"project about " + project.ProjectName}
+                className=" object-cover aspect-[4/3] rounded-t-2xl"
               />
               <div className="p-6 flex flex-col items-center">
                 <h3 className="text-2xl font-bold mb-4">

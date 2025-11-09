@@ -146,8 +146,8 @@ const MyPortfolioPage= ()=>
                 >
                   <img
                     src={items.ProjectImage}
-                    alt={items.title}
-                    className="h-2/3"
+                    alt={"Project about "+items.title}
+                    className=" object-cover aspect-[4/3]"
                   />
                   <a className="sm:text-2xl font-bold text-xl">
                     {items.ProjectName}

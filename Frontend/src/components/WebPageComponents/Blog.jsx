@@ -20,7 +20,6 @@ const BlogPage = () => {
      const getBlogs = async () => {
        try {
          const response = await axiosInstance.get("/getSpecificBlogs");
-         console.log("gro", response.data.data);
          setBlogs(response.data.data);
        } catch (err) {
          toast.error(err.response?.data?.message || "Failed to fetch blogs");
@@ -59,8 +58,8 @@ const BlogPage = () => {
           <div className="p-4 rounded-4xl flex flex-col gap-4 bg-gray-100 shadow-lg hover:shadow-2xl">
             <img
               src={data.AddImage}
-              alt=""
-              className="rounded-4xl w-full h-48"
+              alt={"blog about" + data.blogTitle}
+              className="rounded-4xl object-cover aspect-[4/3]"
             />
             <div className="flex flex-row gap-4">
               <a className=" p-2 rounded-4xl bg-yellow-500 font-bold">

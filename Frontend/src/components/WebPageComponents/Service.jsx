@@ -65,7 +65,8 @@ const Service = () => {
             <p className="text-gray-600 mb-4">{service.description}</p>
             <button className="text-yellow-500 flex items-center gap-1 hover:underline">
               <a target="_blank"
-               href={service.link}>
+               href={service.link}
+               aria-label={"Learn about" + service.title}>
                 Learn More <ArrowForwardIcon fontSize="small" />
               </a>
             </button>
