@@ -76,7 +76,7 @@ const BlogPage = () => {
                 target="_blank"
                 className="w-full text-center bg-green-900 text-white font-bold p-2 rounded-xl hover:bg-green-800 transition"
               >
-                Read More
+                {"Read More about " + data.blogTitle}
               </a>
             </div>
           </div>

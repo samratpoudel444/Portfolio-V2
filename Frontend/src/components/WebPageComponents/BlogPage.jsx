@@ -60,7 +60,7 @@ const BlogsPage = () => {
                   href={`/blog/${blog.id}`} target="_blank"
                   className="w-full text-center bg-green-900 text-white font-bold py-2 rounded-xl hover:bg-green-800 transition"
                 >
-                  Read More
+                  {"Read More about "+ blog.blogTitle}
                 </a>
               </div>
             </div>

@@ -71,7 +71,7 @@ const Service = () => {
               className="text-yellow-500 flex items-center gap-1 hover:underline"
               aria-label={`Learn about ${service.title}`}
             >
-              Learn More <ArrowForwardIcon fontSize="small" />
+              Learn {service.title} <ArrowForwardIcon fontSize="small" />
             </a>
           </div>
         ))}
