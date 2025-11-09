@@ -66,6 +66,7 @@ const Contact = () => {
                   href="https://www.facebook.com/samrat.poudel.351"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Samrat Poudel on Facebook"
                 >
                   <FacebookIcon />
                 </a>
@@ -75,6 +76,7 @@ const Contact = () => {
                   href="https://www.instagram.com/poudel.samrat/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Samrat Poudel on Instagram"
                 >
                   <InstagramIcon />
                 </a>
@@ -84,6 +86,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/samrat-poudel-bab846175/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Samrat Poudel on Linkdin"
                 >
                   <LinkedInIcon />
                 </a>
@@ -93,6 +96,7 @@ const Contact = () => {
                   href="https://github.com/samratpoudel444"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Samrat Poudel on Github"
                 >
                   <GitHubIcon />
                 </a>
@@ -102,6 +106,7 @@ const Contact = () => {
                   href="https://x.com/analyze_we"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Samrat Poudel on twitter or X"
                 >
                   <XIcon />
                 </a>

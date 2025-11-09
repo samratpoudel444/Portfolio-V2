@@ -12,7 +12,6 @@ const BlogsPage = () => {
     const getBlogs = async () => {
       try {
         const response = await axiosInstance.get("/getAllBlogsForClient");
-        console.log("gro", response.data.data)
         setBlogs(response.data.data);
       } catch (err) {
         toast.error(err.response?.data?.message || "Failed to fetch blogs");
