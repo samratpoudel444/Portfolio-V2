@@ -47,7 +47,7 @@ const LoginComponent = () => {
     setMessage(""); 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/login",
+        "https://portfolio-v2-backend-rsyj.onrender.com/api/v1/login",
         formData,
         { withCredentials: true } 
       );
