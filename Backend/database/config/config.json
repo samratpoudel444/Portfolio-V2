@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "avnadmin",
-    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
-    "database": "defaultdb",
-    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
-    "port": 14654,
+    "username": "portfolio_ki8a_user",
+    "password": "QkscDBYdapFzKgggrpvh6ibH4iNbCbEm",
+    "database": "portfolio_ki8a",
+  "host": "dpg-d9uknubncjis739snsog-a.oregon-postgres.render.com",
+    "port": 5432,
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -15,11 +15,11 @@
     }
   },
   "test": {
-    "username": "avnadmin",
-    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
-    "database": "defaultdb",
-    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
-    "port": 14654,
+     "username": "portfolio_ki8a_user",
+    "password": "QkscDBYdapFzKgggrpvh6ibH4iNbCbEm",
+    "database": "portfolio_ki8a",
+    "host": "dpg-d9uknubncjis739snsog-a.oregon-postgres.render.com",
+    "port": 5432,
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -30,11 +30,11 @@
     }
   },
   "production": {
-    "username": "avnadmin",
-    "password": "AVNS_FuvVK0tk6jjDAz0JxMb",
-    "database": "defaultdb",
-    "host": "pg-1cb268d4-poudelsamrat444-9b9b.b.aivencloud.com",
-    "port": 14654,
+    "username": "portfolio_ki8a_user",
+    "password": "QkscDBYdapFzKgggrpvh6ibH4iNbCbEm",
+    "database": "portfolio_ki8a",
+ "host": "dpg-d9uknubncjis739snsog-a.oregon-postgres.render.com",
+    "port": 5432,
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
